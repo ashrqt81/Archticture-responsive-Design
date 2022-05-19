@@ -1,0 +1,966 @@
+*{
+    padding:0;
+    margin:0;
+    outline: none;
+    box-sizing: border-box;
+}
+html{
+    font-family: segoe , 'Segoe UI' , Verdana , sans-serif , 'dejavu sans' , 'Trebuchet Ms' ;
+    font-size: 16px;
+}
+.wrapper{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*navbar1*/
+#navbar1{
+    background-color: #FFCB0E;
+}
+#navbar1 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 90%;
+}
+#navbar1 .wrapper div label{
+    cursor: pointer;
+}
+#navbar1 .wrapper input{
+    display: none;
+}
+#navbar1 .wrapper input:checked+ul{
+    display: block;
+}
+#navbar1 .wrapper ul{
+    list-style-type: none;
+    width: 50%;
+}
+#navbar1 .wrapper ul:first-of-type{
+    display: none;
+}
+#navbar1 .wrapper ul:first-of-type i{
+    margin-right: 5px;
+    text-align: right;
+    display: inline-block;
+    width: 20px;
+}
+#navbar1 .wrapper ul:first-of-type a{
+    display: block;
+    text-align: left;
+    padding: 7px 0;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-left:-30px ;
+    transition: 1s;
+    border-bottom:solid thin RGBa(34,34,34,.6);
+}
+#navbar1 .wrapper ul:first-of-type li:last-of-type a{
+    border:none;
+}
+#navbar1 .wrapper ul:first-of-type a:hover{
+    background-color:RGBa(34,34,34,.6) ;
+}
+#navbar1 .wrapper ul:last-of-type{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+#navbar1 .wrapper ul li a{
+    text-decoration: none;
+    color: #222222;
+}
+/*end navbar1*/
+
+/*navbar2*/
+#navbar2{
+    background-color:#222222 ;
+}
+#navbar2 .wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#navbar2 .wrapper div:first-of-type{
+    margin: 10px 0;
+}
+#navbar2 .wrapper div:first-of-type h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+#navbar2 .wrapper div:first-of-type h1 span{
+    color:#FFCB0E;
+}
+#navbar2 .wrapper div p{
+    font-size: .7rem;
+    color: #919193;
+}
+#navbar2 .wrapper input{
+    display: none;
+}
+#navbar2 .wrapper input:checked+ul{
+    display: block;
+}
+#navbar2 .wrapper ul{
+    list-style-type: none;
+    display: none;
+    text-align: right;
+    text-transform: capitalize;
+    width: 50%;
+}
+#navbar2 .wrapper ul a{
+    text-decoration: none;
+    color:#919193;
+    display: block;
+    transition: 1s;
+    padding: 5px 0;
+    border-bottom: solid thin RGBa(255,203,14,.6) ;
+    text-align: center;
+}
+#navbar2 .wrapper ul li:last-of-type a{
+    border: none;
+}
+#navbar2 .wrapper ul a:hover{
+    background-color:#FFCB0E ;
+}
+#navbar2 .wrapper div:last-of-type{
+    margin-top: 20px;
+}
+#navbar2 .wrapper div:last-of-type label{
+   cursor: pointer;
+   color:#FFCB0E;
+}
+/*end navbar2*/
+
+/*header*/
+header {
+    background: linear-gradient(RGBa(0,0,0,.5),RGBa(0,0,0,.5)),
+                url('../images/banner.jpg') no-repeat center center;
+    padding-top:120px;
+    height: 100vh;
+}
+header .wrapper {
+    text-align: center;
+    width: 90%;
+}
+header .wrapper h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+header .wrapper h1:first-of-type{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+header .wrapper h1:last-of-type{
+    color: #FFCB0E;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+header .wrapper p{
+    color: #C5C6C8;
+    font-size: .8rem;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+header .wrapper a{
+    text-decoration: none;
+    color: #FFCB0E;
+    border: solid thin #BC9507;
+    background-color: #000;
+    padding: 4px 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+    display: inline-block;
+}
+header .wrapper a:first-of-type{
+    margin-left: 15px;
+}
+header .wrapper a:last-of-type{
+    margin-right:15px;
+    margin-left: 5px;
+}
+
+/*welcome company*/
+#sec-1 .wrapper article{
+    text-align: center;
+}
+#sec-1 .wrapper article h1{
+    color: #FFCB0E;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+#sec-1 .wrapper article h5{
+    color: #000;
+    font-weight: 700;
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+#sec-1 .wrapper article p{
+    color: #919190;
+    font-weight: 400;
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+.butt{
+    text-decoration: none;
+    color: #fff;
+    background-color: #FFCB0E;
+    padding: 8px 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: .8rem;
+    display: inline-block;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+#sec-1 .wrapper div img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*end welcome company*/
+
+/*why choose us*/
+#sec-2 {
+    background:linear-gradient(RGBa(64,46,65,.7),RGBa(64,46,65,.7)),
+                url('../images/bg4.jpg') no-repeat center center;
+          
+    padding-top: 50px;
+}
+#sec-2 .wrapper h1{
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #FFCB0E;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sec-2 .wrapper p{
+    color: #fff;
+    font-size: .9rem;
+    text-align: justify;
+    margin-bottom: 75px;
+}
+#sec-2 .wrapper .cards img{
+    border-radius: 50%;
+    padding: 25px;
+    background-color:#FFCB0E ;
+    position: absolute;
+    top: -50px;
+    left:75px;
+}
+#sec-2 .wrapper .cards div {
+    width: 100%;
+    background-color: RGBa(0,0,0,.5);
+    padding: 30px;
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    width: 250px;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+#sec-2 .wrapper .cards div h4{
+    color: #FFCB0E;
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    
+}
+#sec-2 .wrapper .cards div p{
+    font-size: .7rem;
+}
+
+/*end why choose us*/
+
+/*our services*/
+#sec-3 h1{
+    color: #484848;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+#sec-3 .wrapper figure{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    overflow: hidden;
+
+}
+#sec-3 .wrapper figure img{
+    max-width: 100%;
+    height: 260px;
+}
+#sec-3 .wrapper figcaption div{
+    height: 60px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    background-color: RGBa(0,0,0,.7);
+    width: 100%;
+    
+}
+#sec-3 .wrapper figure figcaption div p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+#sec-3 .wrapper figcaption .pra{
+    text-align: justify;
+    color: #7D7D7C;
+    font-size: .9rem;
+    margin-top: 30px;
+    
+}
+#sec-3 .wrapper figcaption a{
+    margin-top: 25px;
+}
+/*end our services*/
+
+/*made with love*/
+#sec-4 {
+    background:linear-gradient(RGBa(91,93,90,.7),RGBa(91,93,90,.7));
+    height: auto;
+
+}
+#sec-4 .wrapper h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 20PX;
+}
+#sec-4 .wrapper p{
+    font-size: .8rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30PX;
+}
+#sec-4 .wrapper ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#sec-4 .wrapper ul a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-size: .6rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+
+}
+#sec-4 .wrapper ul a:hover{
+    background-color: RGBa(0,0,0,.5);
+}
+#sec-4 .wrapper .flex .f{
+    width: 100%;
+    text-align: center;
+}
+#sec-4 .wrapper .flex .f img{
+    width: 100%;
+}
+#sec-4 .wrapper .flex img:first-of-type{
+    width: 100%;
+}
+
+/*end made with love*/
+
+/*Customer reviews*/
+#sec-5{
+    background: url('../images/bg3.jpg') no-repeat center center;
+
+}
+#sec-5 .wrapper h1{
+    color:#484848 ;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sec-5 .wrapper p{
+    color: #929291;
+    text-align: center;
+    font-size: .8rem;
+}
+#sec-5 .wrapper .parent div{
+    width: 90%;
+    height: auto;
+    background-color: #E5E5E4;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 25px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+#sec-5 .wrapper .parent div+img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#sec-5 .wrapper .parent div p{
+    text-align: justify;
+    padding-left: 15px;
+}
+#sec-5 .wrapper .parent .aa{
+    position: absolute;
+    bottom: -11px;
+    left: 45%;
+}
+#sec-5 .wrapper .parent article{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sec-5 .wrapper .parent article img{
+    border-radius: 50%;
+
+}
+#sec-5 .wrapper .parent article h3{
+    color:#484848;
+    font-size: .9rem;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+/*end Customer reviews*/
+
+/*feel free*/
+#sec-6{
+    margin-top: 50px;
+    background-color: #FEDB5C;
+    padding-top: 50px;
+}
+#sec-6 .wrapper h2{
+    color: #73757D;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#sec-6 .wrapper h1{
+    color: #73757D;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#sec-6 .wrapper form{
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#sec-6 .wrapper form input{
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+#sec-6 .wrapper form input:last-of-type{
+    background-color:#73757D ;
+    width: auto;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+}
+#sec-6+div{
+    height: 30px;
+    background-color: #73757D;
+}
+/*end feel free*/
+
+/*lists*/
+#sec-7{
+    background: linear-gradient(RGBa(20,23,29,.9),RGBa(20,23,29,.9)),
+                url('../images/bg2.jpg');
+}
+#sec-7 .wrapper .head2{
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 20px;
+}
+#sec-7 .wrapper article:first-of-type {
+    width: 100%;
+}
+#sec-7 .wrapper article:first-of-type h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #FFCB0E;
+    line-height: 25px;
+}
+#sec-7 .wrapper article:first-of-type h1+p{
+    margin-bottom: 15px;
+}
+#sec-7 .wrapper article:first-of-type p{
+    color: #D6D6D5;
+    font-size: .9rem;
+}
+#sec-7 .wrapper article:first-of-type ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#sec-7 .wrapper article:first-of-type ul a{
+    text-decoration: none;
+}
+#sec-7 .wrapper article:first-of-type ul a i{
+    color: #222222;
+    border-radius: 50%;
+    background-color: #FFCB0E;
+    padding: 10px;
+}
+#sec-7 .wrapper aside ul{
+    list-style-type: none;
+}
+#sec-7 .wrapper aside ul a{
+    text-decoration: none;
+    color: #D6D6D5;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+#sec-7 .wrapper aside ul a i{
+    margin-right: 20px;
+}
+#sec-7 .wrapper div ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#sec-7 .wrapper div ul span{
+    width: 15%;
+    color: #D6D6D5;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 50%;
+    border: #D6D6D5 2px solid;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    line-height: 17px;
+
+}
+#sec-7 .wrapper div ul span h6{
+    font-weight: 400;
+    font-size: .9rem;
+}
+#sec-7 .wrapper div ul p{
+    width: 75%;
+    color: #D6D6D5;
+    font-size: .9rem;
+}
+#sec-7 .wrapper article:last-of-type i{
+    display: inline-block;
+    width: 20px;
+    text-align: right;
+    margin-right: 20px;
+}
+#sec-7 .wrapper article:last-of-type ul{
+    list-style-type: none;
+    padding-bottom: 30px;
+}
+#sec-7 .wrapper article:last-of-type ul li{
+    margin-bottom: 35px;
+}
+#sec-7 .wrapper article:last-of-type a{
+    color: #D6D6D5;
+    font-size: .9rem;
+    text-decoration: none;
+}
+/*end lists*/
+
+/*footer*/
+footer {
+    height: 65px;
+    background-color: #1A1C27;
+    text-align: center;
+    padding: 25px 0;
+}
+footer p{
+    color:#D6D6D5;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+footer p span{
+    color: #9F811A;
+}
+/*end footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */ 
+@media (min-width: 576px) {
+    .wrapper{
+        max-width: 540pX;
+    }
+    #sec-3 .wrapper figure{
+        width: 50%;
+    }
+} /* Medium devices (tablets, 768px and up) */ 
+@media (min-width: 768px) {
+    .wrapper{
+        max-width: 720pX;
+    }
+    #navbar1 .wrapper ul:first-of-type a{
+        margin-left: -20px;
+        width: 50%;
+    }
+   #navbar2 .wrapper ul{
+        width: 30%;
+    }
+    #navbar2 .wrapper ul a{
+        margin-right: -135px;
+    }
+    header .wrapper p{
+        text-align: center;
+    }
+    header {
+        padding-top: 200px;
+    }
+    #sec-2 .wrapper  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    #sec-2 .wrapper h1,#sec-2 .wrapper p{
+        text-align: center !important;
+    }
+    #sec-3 .wrapper figure{
+        width: 50%;
+    }
+    #sec-4 .wrapper .flex .f{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    #sec-4 .wrapper .flex img:first-of-type{
+        margin-bottom: 10px;
+    }
+    #sec-4 .wrapper .flex .f img{
+        width: 49%;
+        margin-bottom: 10px;
+    }
+    #sec-4{
+        padding-top: 80px;
+        height: auto;
+    }
+    #sec-5 .wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #sec-5 .wrapper .parent{
+        width: 48%;
+    }
+    #sec-5 .wrapper div:last-of-type{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #sec-5 .wrapper .parent article{
+        width: 25%;
+    }
+    #sec-6 .wrapper form input:nth-of-type(1),#sec-6 .wrapper form input:nth-of-type(2),#sec-6 .wrapper form input:nth-of-type(3),#sec-6 .wrapper form input:nth-of-type(4){
+        width: 49%;
+    }
+    #sec-7 .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #sec-7 .wrapper article:first-of-type{
+        margin-bottom: 50px;
+    }
+    #sec-7 .wrapper article:first-of-type,#sec-7 .wrapper div{
+        width: 50%;
+        
+    }
+    #sec-7 .wrapper aside,#sec-7 .wrapper article:last-of-type{
+        width: 30%;
+
+    }
+} /* Large devices (desktops, 992px and up) */ 
+@media (min-width: 992px) {
+    .wrapper{
+        max-width: 960pX;
+    }
+    #navbar1 .wrapper div label{
+        display: none;
+    }
+    #navbar2 .wrapper ul a{
+        margin-right:0;
+    }
+    #navbar1 .wrapper input{
+        display: none;
+    }
+    #navbar1 .wrapper input:checked+ul{
+        display: flex;
+    }
+    #navbar1 .wrapper ul:first-of-type{
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
+    }
+    #navbar1 .wrapper ul:last-of-type{
+        width: 10%;
+    }
+    #navbar1 .wrapper ul:first-of-type a{
+        display: block;
+        text-align: left;
+        padding: 7px 0;
+        font-size: .8rem;
+        font-weight: 700;
+        margin-left:0 ;
+        transition: 0s;
+        border:none;
+        width: 100%;
+    }
+    #navbar1 .wrapper ul:first-of-type li:first-of-type{
+        display: none;
+    }
+    #navbar1 .wrapper ul:last-of-type{
+        width: 20%;
+    }
+
+    /*end navbar1*/
+    
+    /*navbar2*/
+    #navbar2 .wrapper div:first-of-type{
+        margin: 10px 0;
+        width: 50%;
+    }
+    #navbar2 .wrapper input{
+        display: none;
+    }
+    #navbar2 .wrapper input:checked+ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #navbar2 .wrapper ul{
+        list-style-type: none;
+        text-transform: capitalize;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #navbar2 .wrapper div label{
+        display: none;
+    }
+    #navbar2 .wrapper ul a{
+        transition: 0s;
+        font-size: .9rem;
+        border-bottom: none;
+ 
+    }
+    #navbar2 .wrapper ul li:last-of-type a{
+        border: none;
+    }
+    #navbar2 .wrapper ul:first-of-type li:first-of-type,#navbar2 .wrapper ul:nth-of-type(2) li:nth-of-type(3){
+        display: none;
+    }
+    #sec-1 .wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #sec-1 .wrapper article{
+        width: 50%;
+        text-align: left;
+        margin-right: 50px;
+    }
+    #sec-1 .wrapper article h1{
+        margin-bottom: 20px;
+        padding-top: 50px;
+        font-size: 1.8rem;
+    }
+    #sec-1 .wrapper article h5{
+        margin-bottom: 30px;
+    }
+    #sec-1 .wrapper article p{
+        text-align: justify;
+    }
+    #sec-1 .wrapper div img{
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    #sec-3 .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-3 .wrapper figure{
+        width: 38%;
+    }
+    #sec-3 .wrapper figure figcaption div{
+        width: 100%;
+    }
+    #sec-4 .wrapper .flex .f img{
+        width: 49%;
+    }
+    #sec-4 .wrapper .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sec-4 .wrapper .flex img:first-of-type{
+        width: 49%;
+        margin-right: 5px;
+    }
+    #sec-4 {
+        background:linear-gradient(RGBa(91,93,90,.7),RGBa(91,93,90,.7)),
+                    url('../images/bg2.jpg') no-repeat center center;
+         padding-top: 70px;
+         height: auto;
+         padding-bottom: 50px;
+         margin-bottom: 50px;
+    }
+    #sec-5 .wrapper{
+        width: 100%;
+    
+    }
+    #sec-5 .wrapper .parent{
+        width: 30%;
+    }
+    #sec-5 .wrapper div:last-of-type{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #sec-5 .wrapper .parent article{
+        width: 35%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #sec-6 .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    #sec-6 .wrapper div{
+        width: 48%;
+    }
+    #sec-6 .wrapper form{
+        width: 48%;
+        margin-top: -20px;
+    }
+    #sec-6 .wrapper form input:nth-of-type(3){
+        width: 79%;
+    }
+    #sec-6 .wrapper form input:nth-of-type(4){
+        width: 20%;
+    }
+    #sec-7 .wrapper{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        justify-content: space-evenly;
+    }
+    #sec-7 .wrapper article:first-of-type{
+        margin-bottom: 50px;
+        width: 26%;
+    }
+    #sec-7 .wrapper div{
+        width: 25%;
+        
+    }
+    #sec-7 .wrapper aside{
+        width: 18%;
+
+    }
+    #sec-7 .wrapper article:last-of-type{
+        width: 22%;
+    }
+    #sec-7 .wrapper div ul span{
+        width: 21%;
+    }
+
+} /* Extra large devices (large desktops, 1200px and up) */ 
+@media (min-width: 1200px) {
+     .wrapper{
+        max-width: 1160pX;
+    }
+    header{
+        padding-top: 250px;
+    }
+    header .wrapper h3{
+        font-size: 1.5rem;
+    }
+    header .wrapper h1:first-of-type,header .wrapper h1:last-of-type{
+        font-size: 2rem;
+    }
+    header .wrapper P{
+        font-size: .9REM;
+    }
+    #sec-3 .wrapper {
+        flex-wrap: nowrap;
+    }
+    #sec-3 .wrapper figure{
+        width: 30%;
+    }
+    #sec-3 .wrapper figure figcaption div{
+        width: 100%;
+    }
+    
+}
